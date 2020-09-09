@@ -1,3 +1,13 @@
+/*
+ * @Author: Kyle Xu
+ * @Date: 2020-09-08 20:13:22
+ * @LastEditors: Kyle Xu
+ * @LastEditTime: 2020-09-09 15:07:11
+ * @Blog: http://kylexu.cn
+ * @Github: https://github.com/xxxxxthhh
+ * @Mail: kyle_x@foxmail.com
+ * @Description:  // write sth about Code
+ */
 import EventEmitter from 'events';
 
 describe('for event', () => {
@@ -16,7 +26,7 @@ describe('for event', () => {
 
     // <--start
     // Please add the event listener to handle `click` event on `element`.
-
+    element.addListener('click', onClick);
     // --end->
 
     element.emit('click');
@@ -34,7 +44,7 @@ describe('for event', () => {
       .then(() => {
         // <--start
         // Please write down the correct value. You should write the final result directly.
-        const expected = undefined;
+        const expected = ['I have been clicked', 'I have been clicked'];
         // --end->
 
         expect(logs).toEqual(expected);
@@ -57,7 +67,7 @@ describe('for event', () => {
       .then(() => {
         // <--start
         // Please write down the correct value. You should write the final result directly.
-        const expected = undefined;
+        const expected = ['I have been clicked'];
         // --end->
 
         expect(logs).toEqual(expected);
