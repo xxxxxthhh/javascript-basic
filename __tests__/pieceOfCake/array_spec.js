@@ -1,10 +1,20 @@
+/*
+ * @Author: Kyle Xu
+ * @Date: 2020-09-08 20:13:22
+ * @LastEditors: Kyle Xu
+ * @LastEditTime: 2020-09-09 13:18:03
+ * @Blog: http://kylexu.cn
+ * @Github: https://github.com/xxxxxthhh
+ * @Mail: kyle_x@foxmail.com
+ * @Description:  // pass all the test
+ */
 describe('for array', () => {
   it('should get element of an array', () => {
     const array = [1, 2, 3, 4, 5];
 
     // <--start
     // Please write down the correct result. You should write the result directly.
-    const expected = undefined;
+    const expected = 3;
     // --end->
 
     expect(array[2]).toEqual(expected);
@@ -15,7 +25,8 @@ describe('for array', () => {
 
     // <--start
     // Please write one line of code to push some elements in the array to pass the test
-
+    array.push(6, 7, 8);
+    console.log(array);
     // --end->
 
     expect(array).toEqual([1, 2, 3, 4, 5, 6, 7, 8]);
@@ -27,7 +38,7 @@ describe('for array', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = [9, 1, 2, 3, 4, 5, 10];
     // --end->
 
     expect(newArray).toEqual(expected);
@@ -38,8 +49,8 @@ describe('for array', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expectedRow = undefined;
-    const expectedColumn = undefined;
+    const expectedRow = 2;
+    const expectedColumn = 3;
     // --end->
 
     expect(row).toEqual(expectedRow);
@@ -52,7 +63,7 @@ describe('for array', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = [2, 4];
     // --end->
 
     expect(filtered).toEqual(expected);
@@ -64,7 +75,7 @@ describe('for array', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = ['Unit 1 for element at index 0', 'Unit 2 for element at index 1', 'Unit 3 for element at index 2', 'Unit 4 for element at index 3', 'Unit 5 for element at index 4'];
     // --end->
 
     expect(mapped).toEqual(expected);
@@ -76,7 +87,7 @@ describe('for array', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 15;
     // --end->
 
     expect(reduced).toEqual(expected);
